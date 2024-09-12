@@ -1,0 +1,252 @@
+
+body {
+    background-color: rgb(9, 9, 11);
+    color: rgb(238, 232, 232);
+    font-family: 'Roboto', sans-serif; /* Apply the Roboto font */
+    font-size: 0.8rem; /* Adjust the base font size */
+}
+.container {
+    max-width: 650px; /* Adjust this value to reduce the width */
+}
+.masthead {
+    background-color: rgb(9, 9, 11);
+    border: 1px solid rgb(39, 36, 36);
+}
+
+.text-center-mobile {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .text-center-mobile {
+        text-align: left; /* Align left on larger screens */
+    }
+}
+
+
+
+/* bio button effect */
+.bio-button {
+    animation: breathing 2s infinite; /* Breathing effect */
+}
+
+
+@keyframes breathing {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.pulsate {
+    animation: pulsate 1.5s infinite; /* Pulsating effect */
+}
+
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+.animated-border {
+    position: relative;
+    padding: 10px 20px; /* Adjust padding as needed */
+    overflow: hidden;
+    color: #fff; /* Text color */
+    border: 2px solid transparent; /* Initial border */
+    transition: color 0.3s ease;
+}
+
+.animated-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(105, 106, 106, 0.5); /* Border color */
+    transition: transform 0.3s ease;
+    transform: scale(0);
+    z-index: 0;
+}
+
+.animated-border:hover {
+    color: rgba(234, 240, 240, 0.8); /* Change text color on hover */
+}
+
+.animated-border:hover::before {
+    transform: scale(1);
+}
+
+
+
+
+  /* card */
+.card {
+    background-color: rgb(9, 9, 11); /* Dark background for cards */
+    color: rgb(94, 88, 88); /* Text color for cards */
+    border-color: rgb(39, 36, 36);
+}
+h6 {
+    font-size: 0.85rem; /* Smaller heading sizes */
+}
+h4{
+    font-size: medium;
+}
+.card-text {
+    font-size: 0.8rem; /* Smaller text in cards */
+}
+
+.small-text{
+    color: rgb(104, 99, 99);
+}
+
+.date{  
+    font-size: .8em;
+}
+
+
+/* Ongoing Projects */
+ .project-title{
+    color: rgb(2308 232, 232);
+}
+.project-title:hover{
+
+}
+
+/* Hover Effects */
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at var(--mouse-x, 10%) var(--mouse-y, 10%), rgba(97, 95, 95, 0.5), rgba(0, 0, 0, 0) 40%); /* Light effect */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevent interaction with the overlay */
+}
+
+.card:hover::after {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card img {
+    position: relative;
+    width: 90%; /* Adjust this value to make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make it a block element */
+    margin: 15px auto; /* Center the image */
+    z-index: 2;
+}
+
+/*fixed button*/
+/* Fixed Button Styles */
+.fixed-button {
+    text-decoration: none;
+    font-weight: 70;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+    text-align: center;
+    background-color: rgb(9, 9, 11); /* Bootstrap primary color */
+    color: rgb(227, 214, 214);
+    border:2px solid rgb(30, 30, 30);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 1000; /* Ensure it stays on top */
+}
+.fixed-button:hover {
+    background-color: rgb(104, 99, 99); /* Darker shade on hover */
+    color: rgb(9, 9, 11);
+}
+
+.fixed-button {
+    border: none; /* remove default border */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* add glow effect */
+    border-radius: 5px; /* add rounded corners */
+    padding: 7px 15px; /* add some padding for better look */
+  }
+
+
+  
+
+
+
+/* infiniscroll */
+
+.scroll {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)
+}
+
+.scroll div {
+    white-space: nowrap;
+    animation: scroll var(--time) linear infinite;
+    animation-delay: calc(var(--time)/-1);
+
+}
+
+.scroll div:nth-child(2) {
+    animation: scroll2 var(--time) linear infinite;
+    animation-delay: calc(var(--time)/-2);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+
+.imgBox div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBox img {
+    max-width: 70px;
+    scale: 0.8;
+}
+
