@@ -11,10 +11,43 @@
     <link rel="stylesheet" href="/style.css">
     
 </head>
-<body>
-    <div class="container my-5">
+<body id="home">
+  <!-- nav -->
+ <nav class="navbar navbar-expand-lg sticky-top py-2 navbar-custom">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#techstack">Tech Stack</a>
+                </li>
+            </ul>
+            <!-- Close Button added inside collapse to close the menu -->
+             <br>
+            <button class="btn-close btn-close-white d-lg-none position-absolute bottom-0 start-0 m-2 mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-label="Close"></button>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- end of nav -->
+
+
+    <div class="container my-5" >
         <div class="mt-5">
-            <div class="masthead rounded-1 p-4 d-flex flex-lg-row flex-column flex-md-row justify-content-between align-items-center ">
+            <div class="masthead rounded-1 p-4 d-flex flex-lg-row flex-column flex-md-row justify-content-between align-items-center " >
                 <div class="d-flex flex-column flex-md-row flex-lg-row align-items-center align-content-sm-center">
                     <img src="/src/images/pic4.png" alt="" width="85px" class="me-2">
                     <div class="justify-content-center text-center-mobile">
@@ -50,7 +83,7 @@
                 </div>
             </div>
             <br>
-            
+              
             <p class="d-flex gap-1 justify-content-center">
                 <a class="btn small-text bio-button animated-border" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   see more 
@@ -78,7 +111,10 @@
                 Technology Students - Caraga State University</p>
                 <h6>Trainings/Seminars </h6>
                 
-            <p class="small-text">Introduction to GitHub Actions  DICT-Laguna <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/hc0fq7kxuo3yu94r4s2e3/GUILBERT-JAN-F.-CABUAL-Certificate-of-Participation.pdf?rlkey=ryerkw6ccl99qhgv9ratuyqeu&st=tw7u7kv8&dl=0">🔗</a></p>
+            <p class="small-text">Introduction to GitHub Actions  DICT-Laguna <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/hc0fq7kxuo3yu94r4s2e3/GUILBERT-JAN-F.-CABUAL-Certificate-of-Participation.pdf?rlkey=ryerkw6ccl99qhgv9ratuyqeu&st=tw7u7kv8&dl=0" target="_blank">🔗</a></p>
+            <p class="small-text">Philippine Online Freelancing Conference  DICT-Albay <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/ajr7mtpysa9asnhv1l833/Guilbert_Jan_F__Cabual__66f4d4de7ac99301972a6201.pdf?rlkey=tc5ntstwr7b9y0oakb1jy8o85&st=k64aj2c7&dl=0" target="_blank">🔗</a></p>
+            <p class="small-text">Exploring Internet of Things  DICT-CAR <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/onr8xr8lc52dxwiqlv1wk/Webinar-Certificates-of-Participation_230.pdf?rlkey=jgagzw5fbdfe6ab71qtu1q0qt&st=utui91fl&dl=0" target="_blank">🔗</a></p>
+            <p class="small-text">Cybersecurity Awareness Seminar  DICT-CAR <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/htp0plxxitbmdxpwd4lh1/GUILBERT-JAN-F.-CABUAL.pdf?rlkey=l6b3k58pkvxygqcojtogyjj6k&st=zr4i061w&dl=0" target="_blank">🔗</a></p>
             
             <br>
             <!-- Skills section -->
@@ -104,7 +140,7 @@
            
 
             
-            <h5>Work Experience ⌛</h5>
+            <h5 id="experience">Work Experience ⌛</h5>
             <hr>
 
             <!-- Work experience card here-->
@@ -149,24 +185,27 @@
             <br><br><br>
 
              <!-- Certificates section -->
-             <h5>Certificates 🎓</h5>
-             <hr>
+             <h5 >Certificates 🎓</h5>
+             <hr >
                      <span class="float-end date">1/20/2024</span>
-                 <h6>Introduction to HTML <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/40w98jjiw41nnd0vcy5as/htmlcert.jpg?rlkey=fopd36x8g5tacfna72a3vb91m&st=1rwlhxgq&dl=0">🔗</a></h6> 
+                 <h6>Introduction to HTML <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/40w98jjiw41nnd0vcy5as/htmlcert.jpg?rlkey=fopd36x8g5tacfna72a3vb91m&st=1rwlhxgq&dl=0" target="_blank">🔗</a></h6> 
                      <p class="small-text">knowing the basics is useful for everyone who works in digital design, marketing, content and more.</p>
                      <span class="float-end date">1/22/2024</span>
-                 <h6>Introduction to CSS <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/9cfa2wfusdud88wu1o5un/csscert.jpg?rlkey=cl9a37u9rf5iwxf999rxqyee4&st=s2nxx9aw&dl=0">🔗</a></h6> 
+                 <h6>Introduction to CSS <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/9cfa2wfusdud88wu1o5un/csscert.jpg?rlkey=cl9a37u9rf5iwxf999rxqyee4&st=s2nxx9aw&dl=0" target="_blank">🔗</a></h6> 
                      <p class="small-text">control the style & layout of websites.</p>
                      <span class="float-end date">3/30/2024</span>
-                 <h6>Introduction to JavaScript <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/vxgfxps76gutiysda0dek/jscert.jpg?rlkey=r6yyrhehfmeubsk2449lnwfzm&st=8mufl92b&dl=0">🔗</a></h6> 
+                     <h6>Introduction to JavaScript <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/vxgfxps76gutiysda0dek/jscert.jpg?rlkey=r6yyrhehfmeubsk2449lnwfzm&st=8mufl92b&dl=0" target="_blank">🔗</a></h6> 
                      <p class="small-text">a versatile, high-level programming language widely used for web development. </p>
+                     <span class="float-end date">10/14/2024</span>
+                 <h6>Introduction to SQL <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/pxnxlov4uiaskc1e5uf8m/0c8e5e2b-be11-4ae0-897b-d1689cce616d.pdf?rlkey=5u268cx9ltdqbudtt76dn77qr&st=gvebwak0&dl=0" target="_blank">🔗</a></h6> 
+                     <p class="small-text">a standardized programming language used for managing and manipulating relational databases.  </p>
                  
                  
 
-                 <br><br>
+                 <br><br >
 
             <!-- Projects section -->
-            <h5>Projects 🏗️</h5>
+            <h5 id="projects" >Projects 🏗️</h5>
             <div class="flex-wrap d-flex gap-3 justify-content-lg-between justify-content-md-between justify-content-center">
                 <a href="https://github.com/gjcabual/StayEasy-App" target="_blank" style="text-decoration: none;">
                   <div class="card" style="width: 19rem;">
@@ -267,7 +306,7 @@
         <br><br><br>
 
         <!-- infi scroll -->
-        <h5>Tech Stack 💼</h5>
+        <h5 id="techstack">Tech Stack 💼</h5>
         <hr>
         <div class="scroll imgBox" style="--time:24s">
         <div>
@@ -301,39 +340,35 @@
             <img src="./src/images/github.png" alt="">
         </div>
         </div>
-
-        
-
     </div>
 
             <!-- Fixed Position Button -->
-   <a href="https://www.dropbox.com/scl/fi/xgnr29eo9nxjzfknnavt9/Cabual-Guilbert-Jan-F.-CV.pdf?rlkey=jt8km1l0wtvgysdv3hgi9dmil&st=0nfbczda&dl=0" type="button" class="fixed-button"><span class="">Resume</span> <img width="18px" src="/src/images/arrow3.png" alt=""></a>
+   <a href="https://www.dropbox.com/scl/fi/xgnr29eo9nxjzfknnavt9/Cabual-Guilbert-Jan-F.-CV.pdf?rlkey=jt8km1l0wtvgysdv3hgi9dmil&st=0nfbczda&dl=0" type="button" class="fixed-button" target="_blank"><span class="">Resume</span> <img width="18px" src="/src/images/arrow3.png" alt=""></a>
 
-    <script>
-        
-        document.querySelectorAll('.card').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                card.style.setProperty('--mouse-x', `${x}px`);
-                card.style.setProperty('--mouse-y', `${y}px`);
-            });
-        });
+    
+   <script>
 
-        //image reveal
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          card.style.setProperty('--mouse-x', `${x}px`);
+          card.style.setProperty('--mouse-y', `${y}px`);
+      });
+  });
 
-        // Get the anchor link and image elements
-const anchorLink = document.querySelector('.project-title');
-const image = document.querySelector('#image-reveal');
-
-// Add an event listener to the anchor link
-anchorLink.addEventListener('click', () => {
-  // Toggle the reveal class on the image
-  image.classList.toggle('reveal');
-});
-
+    window.onscroll = function() {
+        const navbar = document.querySelector('.navbar-custom');
+        if (window.scrollY > 50) {
+            navbar.classList.add('navbar-blur');
+        } else {
+            navbar.classList.remove('navbar-blur');
+        }
+    };
     </script>
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

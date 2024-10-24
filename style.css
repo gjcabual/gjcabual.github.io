@@ -119,9 +119,6 @@ h4{
  .project-title{
     color: rgb(2308 232, 232);
 }
-.project-title:hover{
-
-}
 
 /* Hover Effects */
 .card {
@@ -249,4 +246,28 @@ h4{
     max-width: 70px;
     scale: 0.8;
 }
+
+.nav-link:hover{
+    color:rgb(38, 184, 184)
+    
+}
+.nav-link{
+    color: rgb(238, 232, 232);
+}
+
+
+
+.navbar-custom {
+    background-color: rgba(9, 9, 11); /* Initial background */
+    transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+.navbar-blur {
+    background-color: rgba(16, 16, 16, 0.8); /* Adjust color and opacity */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+}
+
+
+
+
 
