@@ -9,9 +9,18 @@
     <link rel="icon" type="image/icon" href="/src/images/g.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+
+   
+
     
 </head>
 <body id="home">
+  <!-- prelaoder -->
+  <div class="preloader" id="preloader">
+    <div id="helloText">• Hello</div>
+</div>
+
+
   <!-- nav -->
  <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top py-2 navbar-custom">
     <div class="container-fluid">
@@ -369,6 +378,42 @@
             navbar.classList.remove('navbar-blur');
         }
     };
+
+
+    //for preloader
+
+    const greetings = ['• Nǐ hǎo', '• Hola', '• Hallo', '• Ciao', '• Olá', '• नमस्ते', '• Aloha', '• Bonjour'];
+    const helloText = document.getElementById('helloText');
+    const preloader = document.getElementById('preloader');
+    const content = document.querySelector('.content');
+
+    let index = 0;
+
+    function showNextGreeting() {
+        if (index < greetings.length) {
+            helloText.innerText = greetings[index];
+            index++;
+            setTimeout(showNextGreeting, 180); // Repeat every 180ms
+        } else {
+            // Freeze on the last greeting
+            setTimeout(() => {
+                preloader.classList.remove('visible'); // Fade out preloader
+                setTimeout(() => {
+                    preloader.classList.add('hidden'); // Hide preloader completely
+                    content.style.display = 'block'; // Show content
+                    document.body.style.overflow = 'auto'; // Enable scrolling
+                }, 500); // Wait for the fade-out transition to complete
+            }, 1000); // Show last greeting for 1 second
+        }
+    }
+
+    // Fade in preloader and start showing greetings
+    window.onload = function() {
+        preloader.classList.add('visible');
+        setTimeout(showNextGreeting, 500); // Start after 500ms
+    };
+
+    //end for prel
     </script>
     
 
