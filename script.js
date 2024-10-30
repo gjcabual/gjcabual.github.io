@@ -50,19 +50,8 @@ window.onload = function () {
     preloader.classList.add('visible');
     setTimeout(showNextGreeting, 800); // Start after 500ms
 };
+document.body.style.visibility = 'visible'; // Show the body content to ensure preloader is visible
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const preloader = document.querySelector('.preloader');
-
-
-
-    // Simulate preloader animation duration
-    setTimeout(() => {
-        preloader.style.display = 'none'; // Hide the preloader
-        document.body.style.visibility = 'visible'; // Show the body content to ensure preloader is visible
-        mainContainer.style.display = 'block'; // Show the main content
-    }, 3500); // Change 3000 to the duration of your preloader animation (in milliseconds)
-});
 //end for prel
