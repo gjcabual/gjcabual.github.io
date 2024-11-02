@@ -9,353 +9,368 @@
     <link rel="icon" type="image/icon" href="/src/images/gjj-modified.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <script src="jquery-2.1.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
    
 
     
 </head>
 <body id="home">
-  <!-- prelaoder -->
+  <div class="contents">
+
+    <!-- prelaoder -->
   <div class="preloader" id="preloader">
     <div id="helloText">• Hello</div>
-</div>
+  </div>
 
 
-  <!-- nav -->
+    <!-- nav -->
  <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top py-2 navbar-custom">
-    <div class="container-fluid">
-        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <div class="container-fluid">
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#techstack">Tech Stack</a>
-                </li>
-            </ul>
-            <!-- Close Button added inside collapse to close the menu -->
-             <br>
-            <button class="btn-close btn-close-white d-lg-none d-md-none position-absolute bottom-0 start-0 m-2 mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-label="Close"></button>
-        </div>
-    </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#techstack">Tech Stack</a>
+              </li>
+          </ul>
+          <!-- Close Button added inside collapse to close the menu -->
+           <br>
+          <button class="btn-close btn-close-white d-lg-none d-md-none position-absolute bottom-0 start-0 m-2 mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-label="Close"></button>
+      </div>
+  </div>
 </nav>
 
 
-  <!-- end of nav -->
+<!-- end of nav -->
 
 
-    <div class="container my-5" >
-        <div class="mt-5">
-            <div class="masthead rounded-1 p-4 d-flex flex-lg-row flex-column flex-md-row justify-content-between align-items-center " >
-                <div class="d-flex flex-column flex-md-row flex-lg-row align-items-center align-content-sm-center">
-                    <img src="/src/images/pic4.png" alt="" width="85px" class="me-2">
-                    <div class="justify-content-center text-center-mobile">
-                        <span style="font-size: medium;">Guilbert Jan F. Cabual</span><br>
-                        <span class="small-text " style="font-size: 0.9em;">📍Surigao City, Philippines</span><br>
-                        <span class="small-text" style="font-size: 0.9em;">📞 (+63) 950 545 8794</span> <br> 
-                        <span class="small-text email-margin" style="font-size: 0.9em;">📩 gjcabual@gmail.com</span>
-                    </div>
-                </div>
+  <div class="container my-5" >
+      <div class="mt-5">
+          <div class="masthead rounded-1 p-4 d-flex flex-lg-row flex-column flex-md-row justify-content-between align-items-center " >
+              <div class="d-flex flex-column flex-md-row flex-lg-row align-items-center align-content-sm-center">
+                  <img src="/src/images/pic4.png" alt="" width="85px" class="me-2">
+                  <div class="justify-content-center text-center-mobile">
+                      <span style="font-size: medium;">Guilbert Jan F. Cabual</span><br>
+                      <span class="small-text " style="font-size: 0.9em;">📍Surigao City, Philippines</span><br>
+                      <span class="small-text" style="font-size: 0.9em;">📞 (+63) 950 545 8794</span> <br> 
+                      <span class="small-text email-margin" style="font-size: 0.9em;">📩 gjcabual@gmail.com</span>
+                  </div>
+              </div>
 
-                <!-- socials svg -->
-                <div class="d-flex justify-content-end gap-1 mt-3 mt-md-0 mt-lg-0">
-                    
-                    
-                    
-                    <a data-toggle="tooltip" data-placement="top" title="GitHub" href="https://github.com/gjcabual" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
-                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M41,24c0,9.4 -7.6,17 -17,17c-9.4,0 -17,-7.6 -17,-17c0,-9.4 7.6,-17 17,-17c9.4,0 17,7.6 17,17z" fill="#eff3f4"></path><path d="M21,41v-5.5c0,-0.3 0.2,-0.5 0.5,-0.5c0.3,0 0.5,0.2 0.5,0.5v5.5h2v-6.5c0,-0.3 0.2,-0.5 0.5,-0.5c0.3,0 0.5,0.2 0.5,0.5v6.5h2v-5.5c0,-0.3 0.2,-0.5 0.5,-0.5c0.3,0 0.5,0.2 0.5,0.5v5.5h1.8c0.2,-0.3 0.2,-0.6 0.2,-1.1v-3.9c0,-2.2 -1.9,-5.2 -4.3,-5.2h-2.5c-2.3,0 -4.3,3.1 -4.3,5.2v3.9c0,0.4 0.1,0.8 0.2,1.1h1.9zM40.1,26.4v0c0,0 -1.3,-0.4 -2.4,-0.4h-0.1c-1.1,0 -2.9,0.3 -2.9,0.3c-0.1,0 -0.1,0 -0.1,-0.1c0,-0.1 0,-0.1 0.1,-0.1c0.1,0 2,-0.3 3.1,-0.3c1.1,0 2.4,0.4 2.5,0.4c0.1,0 0.1,0.1 0.1,0.2c-0.2,-0.1 -0.2,0 -0.3,0zM39.8,27.2v0c0,0 -1.4,-0.4 -2.6,-0.4c-0.9,0 -3,0.2 -3.1,0.2c-0.1,0 -0.1,0 -0.1,-0.1c0,-0.1 0,-0.1 0.1,-0.1c0.1,0 2.2,-0.2 3.1,-0.2c1.3,0 2.6,0.4 2.6,0.4c0.1,0 0.1,0.1 0.1,0.2c0,-0.1 0,0 -0.1,0zM7.8,26.4c-0.1,0 -0.1,0 -0.1,-0.1c0,-0.1 0,-0.1 0.1,-0.2c0.8,-0.2 2.4,-0.5 3.3,-0.5c0.8,0 3.5,0.2 3.6,0.2c0.1,0 0.1,0.1 0.1,0.1c0,0.1 -0.1,0.1 -0.1,0.1c0,0 -2.7,-0.2 -3.5,-0.2c-1.1,0.2 -2.6,0.4 -3.4,0.6zM8.2,27.9c0,0 -0.1,0 -0.1,-0.1c0,-0.1 0,-0.1 0,-0.2c0.1,0 1.4,-0.8 2.9,-1c1.3,-0.2 4,0.1 4.2,0.1c0.1,0 0.1,0.1 0.1,0.1c0,0.1 -0.1,0.1 -0.1,0.1v0c0,0 -2.8,-0.3 -4.1,-0.1c-1.5,0.3 -2.9,1.1 -2.9,1.1z" fill="#202121"></path><path d="M14.2,23.5c0,-4.4 4.6,-8.5 10.3,-8.5c5.7,0 10.3,4 10.3,8.5c0,4.5 -3.3,7.5 -10.3,7.5c-7,0 -10.3,-3.1 -10.3,-7.5z" fill="#202121"></path><path d="M28.6,16.3c0,0 1.7,-2.3 4.8,-2.3c1.2,1.2 0.4,4.8 0,5.8zM20.4,16.3c0,0 -1.7,-2.3 -4.8,-2.3c-1.2,1.2 -0.4,4.8 0,5.8zM20.1,35.9c0,0 -2.3,0 -2.8,0c-1.2,0 -2.3,-0.5 -2.8,-1.5c-0.6,-1.1 -1.1,-2.3 -2.6,-3.3c-0.3,-0.2 -0.1,-0.4 0.4,-0.4c0.5,0.1 1.4,0.2 2.1,1.1c0.7,0.9 1.5,2 2.8,2c1.3,0 2.7,0 3.5,-0.9z" fill="#202121"></path><path d="M24,4c-11,0 -20,9 -20,20c0,11 9,20 20,20c11,0 20,-9 20,-20c0,-11 -9,-20 -20,-20zM24,40c-8.8,0 -16,-7.2 -16,-16c0,-8.8 7.2,-16 16,-16c8.8,0 16,7.2 16,16c0,8.8 -7.2,16 -16,16z" fill="#eff3f4"></path></g></g>
-                      </svg></a>
+              <!-- socials svg -->
+              <div class="d-flex justify-content-end gap-1 mt-3 mt-md-0 mt-lg-0">
+                  
+                  
+                  
+                  <a data-toggle="tooltip" data-placement="top" title="GitHub" href="https://github.com/gjcabual" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M41,24c0,9.4 -7.6,17 -17,17c-9.4,0 -17,-7.6 -17,-17c0,-9.4 7.6,-17 17,-17c9.4,0 17,7.6 17,17z" fill="#eff3f4"></path><path d="M21,41v-5.5c0,-0.3 0.2,-0.5 0.5,-0.5c0.3,0 0.5,0.2 0.5,0.5v5.5h2v-6.5c0,-0.3 0.2,-0.5 0.5,-0.5c0.3,0 0.5,0.2 0.5,0.5v6.5h2v-5.5c0,-0.3 0.2,-0.5 0.5,-0.5c0.3,0 0.5,0.2 0.5,0.5v5.5h1.8c0.2,-0.3 0.2,-0.6 0.2,-1.1v-3.9c0,-2.2 -1.9,-5.2 -4.3,-5.2h-2.5c-2.3,0 -4.3,3.1 -4.3,5.2v3.9c0,0.4 0.1,0.8 0.2,1.1h1.9zM40.1,26.4v0c0,0 -1.3,-0.4 -2.4,-0.4h-0.1c-1.1,0 -2.9,0.3 -2.9,0.3c-0.1,0 -0.1,0 -0.1,-0.1c0,-0.1 0,-0.1 0.1,-0.1c0.1,0 2,-0.3 3.1,-0.3c1.1,0 2.4,0.4 2.5,0.4c0.1,0 0.1,0.1 0.1,0.2c-0.2,-0.1 -0.2,0 -0.3,0zM39.8,27.2v0c0,0 -1.4,-0.4 -2.6,-0.4c-0.9,0 -3,0.2 -3.1,0.2c-0.1,0 -0.1,0 -0.1,-0.1c0,-0.1 0,-0.1 0.1,-0.1c0.1,0 2.2,-0.2 3.1,-0.2c1.3,0 2.6,0.4 2.6,0.4c0.1,0 0.1,0.1 0.1,0.2c0,-0.1 0,0 -0.1,0zM7.8,26.4c-0.1,0 -0.1,0 -0.1,-0.1c0,-0.1 0,-0.1 0.1,-0.2c0.8,-0.2 2.4,-0.5 3.3,-0.5c0.8,0 3.5,0.2 3.6,0.2c0.1,0 0.1,0.1 0.1,0.1c0,0.1 -0.1,0.1 -0.1,0.1c0,0 -2.7,-0.2 -3.5,-0.2c-1.1,0.2 -2.6,0.4 -3.4,0.6zM8.2,27.9c0,0 -0.1,0 -0.1,-0.1c0,-0.1 0,-0.1 0,-0.2c0.1,0 1.4,-0.8 2.9,-1c1.3,-0.2 4,0.1 4.2,0.1c0.1,0 0.1,0.1 0.1,0.1c0,0.1 -0.1,0.1 -0.1,0.1v0c0,0 -2.8,-0.3 -4.1,-0.1c-1.5,0.3 -2.9,1.1 -2.9,1.1z" fill="#202121"></path><path d="M14.2,23.5c0,-4.4 4.6,-8.5 10.3,-8.5c5.7,0 10.3,4 10.3,8.5c0,4.5 -3.3,7.5 -10.3,7.5c-7,0 -10.3,-3.1 -10.3,-7.5z" fill="#202121"></path><path d="M28.6,16.3c0,0 1.7,-2.3 4.8,-2.3c1.2,1.2 0.4,4.8 0,5.8zM20.4,16.3c0,0 -1.7,-2.3 -4.8,-2.3c-1.2,1.2 -0.4,4.8 0,5.8zM20.1,35.9c0,0 -2.3,0 -2.8,0c-1.2,0 -2.3,-0.5 -2.8,-1.5c-0.6,-1.1 -1.1,-2.3 -2.6,-3.3c-0.3,-0.2 -0.1,-0.4 0.4,-0.4c0.5,0.1 1.4,0.2 2.1,1.1c0.7,0.9 1.5,2 2.8,2c1.3,0 2.7,0 3.5,-0.9z" fill="#202121"></path><path d="M24,4c-11,0 -20,9 -20,20c0,11 9,20 20,20c11,0 20,-9 20,-20c0,-11 -9,-20 -20,-20zM24,40c-8.8,0 -16,-7.2 -16,-16c0,-8.8 7.2,-16 16,-16c8.8,0 16,7.2 16,16c0,8.8 -7.2,16 -16,16z" fill="#eff3f4"></path></g></g>
+                    </svg></a>
 
-                        <a data-toggle="tooltip" data-placement="top" title="LinkedIn" href="https://www.linkedin.com/in/gjcabual/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
-                          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M24,4c-11.04569,0 -20,8.95431 -20,20c0,11.04569 8.95431,20 20,20c11.04569,0 20,-8.95431 20,-20c0,-11.04569 -8.95431,-20 -20,-20z" fill="#e7ecef"></path><path d="M14,19h4v15h-4zM15.988,17h-0.022c-1.194,0 -1.966,-0.89 -1.966,-2.001c0,-1.135 0.796,-1.999 2.011,-1.999c1.217,0 1.966,0.864 1.989,1.999c0,1.111 -0.772,2.001 -2.012,2.001zM35,24.5c0,-3.038 -2.462,-5.5 -5.5,-5.5c-1.862,0 -3.505,0.928 -4.5,2.344v-2.344h-4v15h4v-8c0,-1.657 1.343,-3 3,-3c1.657,0 3,1.343 3,3v8h4c0,0 0,-9.079 0,-9.5z" fill="#028bd6"></path></g></g>
+                      <a data-toggle="tooltip" data-placement="top" title="LinkedIn" href="https://www.linkedin.com/in/gjcabual/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M24,4c-11.04569,0 -20,8.95431 -20,20c0,11.04569 8.95431,20 20,20c11.04569,0 20,-8.95431 20,-20c0,-11.04569 -8.95431,-20 -20,-20z" fill="#e7ecef"></path><path d="M14,19h4v15h-4zM15.988,17h-0.022c-1.194,0 -1.966,-0.89 -1.966,-2.001c0,-1.135 0.796,-1.999 2.011,-1.999c1.217,0 1.966,0.864 1.989,1.999c0,1.111 -0.772,2.001 -2.012,2.001zM35,24.5c0,-3.038 -2.462,-5.5 -5.5,-5.5c-1.862,0 -3.505,0.928 -4.5,2.344v-2.344h-4v15h4v-8c0,-1.657 1.343,-3 3,-3c1.657,0 3,1.343 3,3v8h4c0,0 0,-9.079 0,-9.5z" fill="#028bd6"></path></g></g>
+                        </svg></a>
+
+
+                        <a data-toggle="tooltip" data-placement="top" title="Facebook" href="https://web.facebook.com/gjcabual" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
+                          <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
                           </svg></a>
 
+                          
 
-                          <a data-toggle="tooltip" data-placement="top" title="Facebook" href="https://web.facebook.com/gjcabual" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
-                            <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
-                            </svg></a>
+              </div>
+          </div>
+          <br>
+            
+          <p class="d-flex gap-1 justify-content-center">
+              <a class="btn small-text bio-button animated-border" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                see more 
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body d-flex justify-content-around">
+                <div class="text-center">
+                  <img src="/src/images/gjcclear.jpg" class="img-fluid card-img-top" style="max-width: 300px;"> <!-- Set max width -->
 
-                            
-
-                </div>
-            </div>
-            <br>
-              
-            <p class="d-flex gap-1 justify-content-center">
-                <a class="btn small-text bio-button animated-border" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  see more 
-                </a>
-              </p>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body d-flex justify-content-around">
-                  <div class="text-center">
-                    <img src="/src/images/gjcclear.jpg" class="img-fluid card-img-top" style="max-width: 300px;"> <!-- Set max width -->
-
-                    <p>A Web Developer/ Freelancer/ IT student with a passion for technology and innovation. I thrive on challenges and enjoy collaborating on projects that push the boundaries of creativity. Feel free to connect with me to discuss tech, projects, or potential collaborations!</p>
-                  </div>
+                  <p>A Web Developer/ Freelancer/ IT student with a passion for technology and innovation. I thrive on challenges and enjoy collaborating on projects that push the boundaries of creativity. Feel free to connect with me to discuss tech, projects, or potential collaborations!</p>
                 </div>
               </div>
-        
-            <!-- main body -->
-            <h5 class="pt-3">About Me 👤</h5>
-            <hr>
-            <h6>Education</h6>
-            <span class="float-end date">2021 - present</span>
-            <p class="small-text">Bachelor of Science in Information Technology student at Caraga State University</p>
-            <h6>Organizations</h6>
-            <span class="float-end date">2022 - present</span>
-            <p class="small-text">Society of Information
-                Technology Students - Caraga State University</p>
-                <h6>Trainings/Seminars </h6>
-                
-            <p class="small-text">Introduction to GitHub Actions  DICT-Laguna <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/hc0fq7kxuo3yu94r4s2e3/GUILBERT-JAN-F.-CABUAL-Certificate-of-Participation.pdf?rlkey=ryerkw6ccl99qhgv9ratuyqeu&st=tw7u7kv8&dl=0" target="_blank">🔗</a></p>
-            <p class="small-text">Philippine Online Freelancing Conference  DICT-Albay <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/ajr7mtpysa9asnhv1l833/Guilbert_Jan_F__Cabual__66f4d4de7ac99301972a6201.pdf?rlkey=tc5ntstwr7b9y0oakb1jy8o85&st=k64aj2c7&dl=0" target="_blank">🔗</a></p>
-            <p class="small-text">Exploring Internet of Things  DICT-CAR <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/onr8xr8lc52dxwiqlv1wk/Webinar-Certificates-of-Participation_230.pdf?rlkey=jgagzw5fbdfe6ab71qtu1q0qt&st=utui91fl&dl=0" target="_blank">🔗</a></p>
-            <p class="small-text">Cybersecurity Awareness Seminar  DICT-CAR <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/htp0plxxitbmdxpwd4lh1/GUILBERT-JAN-F.-CABUAL.pdf?rlkey=l6b3k58pkvxygqcojtogyjj6k&st=zr4i061w&dl=0" target="_blank">🔗</a></p>
-            <p class="small-text">Google DevFest Butuan 2024  CSU Main H.E.R.O Learning Commons
-              <!-- <a href="" style="text-decoration: none;" target="_blank">🔗</a> -->
-            </p>
-            
-            <br>
-            <!-- Skills section -->
-            <h5>Skills 🔑</h5>
-            <hr>
-            <div class="skillset d-flex align-content-sm-center justify-content-around">
-                <ul>
-                    <li>Web Development</li>
-                    <li>UI/UX Design</li>
-                    <li>Programming</li>
-                    <li>Database Management</li>
-                    <li>Networking</li>
-                </ul>
-                <ul>
-                    <li>Seo</li>
-                    <li>Graphics Designing</li>
-                    <li>Video Editing</li>
-                    <li>Social Media Management</li>
-                    <li>Mobile-app Development</li>
-                </ul>
-            </div><br><br>
-            
-           
-
-            
-            <h5 id="experience">Work Experience ⌛</h5>
-            <hr>
-
-            <!-- Work experience card here-->
-
-            <div class="flex-wrap d-flex gap-3 justify-content-lg-between justify-content-md-between justify-content-center">
-                <div class="card" style="width: 19rem;">
-                    <div class="card-body">
-                        <h5 style="color:rgb(167, 160, 160);">Startech Computer Center</h5>
-                        <h6 class="card-subtitle mb-2 ">IT intern -<span > 2019</span></h6><br>
-                      <p class="card-text">-Provided Level 1 support, handling troubleshooting and
-                        maintenance of computers and peripherals.
-                        <br><br>-Assisted customers with software installation, configuration,
-                        and updates.
-                        <br><br>-Diagnosed hardware issues and performed repairs on
-                        desktops and laptops.
-                        <br><br>-Supported the sales team by demonstrating product
-                        features and capabilities to customers..</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 19rem;">
-                    <div class="card-body">
-                        <h5 style="color:rgb(167, 160, 160);">Data Annotation Specialist</h5>
-                        <h6 class="card-subtitle mb-2 ">Task Reviewer (Freelance) -<span > 2020</span></h6><br>
-                        
-                      <p class="card-text">-Reviewed and assessed the work of data annotators,
-                        ensuring accuracy and completeness to maintain high
-                        standards for AI training datasets.
-                        <br><br>-Provided constructive feedback to data annotators to
-                        enhance their skills and improve annotation quality.
-                        <br><br>-Provided constructive feedback on guidelines and
-                        processes to improve annotation standards.
-                        <br><br>-Efficiently managed multiple tasks to meet deadlines in a
-                        fast-paced remote environment.</p>
-                    </div>
-                </div>
             </div>
+      
+          <!-- main body -->
+          <h5 class="pt-3">About Me 👤</h5>
+          <hr>
+          <h6>Education</h6>
+          <span class="float-end date">2021 - present</span>
+          <p class="small-text">Bachelor of Science in Information Technology student at Caraga State University</p>
+          <h6>Organizations</h6>
+          <span class="float-end date">2022 - present</span>
+          <p class="small-text">Society of Information
+              Technology Students - Caraga State University</p>
+              <h6>Trainings/Seminars </h6>
+              
+          <p class="small-text">Introduction to GitHub Actions  DICT-Laguna <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/hc0fq7kxuo3yu94r4s2e3/GUILBERT-JAN-F.-CABUAL-Certificate-of-Participation.pdf?rlkey=ryerkw6ccl99qhgv9ratuyqeu&st=tw7u7kv8&dl=0" target="_blank">🔗</a></p>
+          <p class="small-text">Philippine Online Freelancing Conference  DICT-Albay <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/ajr7mtpysa9asnhv1l833/Guilbert_Jan_F__Cabual__66f4d4de7ac99301972a6201.pdf?rlkey=tc5ntstwr7b9y0oakb1jy8o85&st=k64aj2c7&dl=0" target="_blank">🔗</a></p>
+          <p class="small-text">Exploring Internet of Things  DICT-CAR <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/onr8xr8lc52dxwiqlv1wk/Webinar-Certificates-of-Participation_230.pdf?rlkey=jgagzw5fbdfe6ab71qtu1q0qt&st=utui91fl&dl=0" target="_blank">🔗</a></p>
+          <p class="small-text">Cybersecurity Awareness Seminar  DICT-CAR <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/htp0plxxitbmdxpwd4lh1/GUILBERT-JAN-F.-CABUAL.pdf?rlkey=l6b3k58pkvxygqcojtogyjj6k&st=zr4i061w&dl=0" target="_blank">🔗</a></p>
+          <p class="small-text">Google DevFest Butuan 2024  CSU Main H.E.R.O Learning Commons
+            <!-- <a href="" style="text-decoration: none;" target="_blank">🔗</a> -->
+          </p>
+          
+          <br>
+          <!-- Skills section -->
+          <h5>Skills 🔑</h5>
+          <hr>
+          <div class="skillset d-flex align-content-sm-center justify-content-around">
+              <ul>
+                  <li>Web Development</li>
+                  <li>UI/UX Design</li>
+                  <li>Programming</li>
+                  <li>Database Management</li>
+                  <li>Networking</li>
+              </ul>
+              <ul>
+                  <li>Seo</li>
+                  <li>Graphics Designing</li>
+                  <li>Video Editing</li>
+                  <li>Social Media Management</li>
+                  <li>Mobile-app Development</li>
+              </ul>
+          </div><br><br>
+          
+         
 
+          
+          <h5 id="experience">Work Experience ⌛</h5>
+          <hr>
 
+          <!-- Work experience card here-->
 
-            
-
-            <br><br><br>
-
-             <!-- Certificates section -->
-             <h5 >Certificates 🎓</h5>
-             <hr >
-                     <span class="float-end date">1/20/2024</span>
-                 <h6>Introduction to HTML <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/40w98jjiw41nnd0vcy5as/htmlcert.jpg?rlkey=fopd36x8g5tacfna72a3vb91m&st=1rwlhxgq&dl=0" target="_blank">🔗</a></h6> 
-                     <p class="small-text">knowing the basics is useful for everyone who works in digital design, marketing, content and more.</p>
-                     <span class="float-end date">1/22/2024</span>
-                 <h6>Introduction to CSS <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/9cfa2wfusdud88wu1o5un/csscert.jpg?rlkey=cl9a37u9rf5iwxf999rxqyee4&st=s2nxx9aw&dl=0" target="_blank">🔗</a></h6> 
-                     <p class="small-text">control the style & layout of websites.</p>
-                     <span class="float-end date">3/30/2024</span>
-                     <h6>Introduction to JavaScript <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/vxgfxps76gutiysda0dek/jscert.jpg?rlkey=r6yyrhehfmeubsk2449lnwfzm&st=8mufl92b&dl=0" target="_blank">🔗</a></h6> 
-                     <p class="small-text">a versatile, high-level programming language widely used for web development. </p>
-                     <span class="float-end date">10/14/2024</span>
-                 <h6>Introduction to SQL <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/pxnxlov4uiaskc1e5uf8m/0c8e5e2b-be11-4ae0-897b-d1689cce616d.pdf?rlkey=5u268cx9ltdqbudtt76dn77qr&st=gvebwak0&dl=0" target="_blank">🔗</a></h6> 
-                     <p class="small-text">a standardized programming language used for managing and manipulating relational databases.  </p>
-                 
-                 
-
-                 <br><br >
-
-            <!-- Projects section -->
-            <h5 id="projects" >Projects 🏗️</h5>
-            <div class="flex-wrap d-flex gap-3 justify-content-lg-between justify-content-md-between justify-content-center">
-                <a href="https://github.com/gjcabual/StayEasy-App" target="_blank" style="text-decoration: none;">
-                  <div class="card" style="width: 19rem;">
-                  <img src="/src/images/project1.png"   class="card-img-top">
+          <div class="flex-wrap d-flex gap-3 justify-content-lg-between justify-content-md-between justify-content-center">
+              <div class="card" style="width: 19rem;">
                   <div class="card-body">
-                      <h5 style="color:rgb(167, 160, 160);">StayEasy</h5>
-                    <p class="card-text">designed specifically for students and individuals
-                      seeking accommodation near Caraga State University.</p>
+                      <h5 style="color:rgb(167, 160, 160);">Startech Computer Center</h5>
+                      <h6 class="card-subtitle mb-2 ">IT intern -<span > 2019</span></h6><br>
+                    <p class="card-text">-Provided Level 1 support, handling troubleshooting and
+                      maintenance of computers and peripherals.
+                      <br><br>-Assisted customers with software installation, configuration,
+                      and updates.
+                      <br><br>-Diagnosed hardware issues and performed repairs on
+                      desktops and laptops.
+                      <br><br>-Supported the sales team by demonstrating product
+                      features and capabilities to customers..</p>
+                  </div>
+              </div>
+              <div class="card" style="width: 19rem;">
+                  <div class="card-body">
+                      <h5 style="color:rgb(167, 160, 160);">Data Annotation Specialist</h5>
+                      <h6 class="card-subtitle mb-2 ">Task Reviewer (Freelance) -<span > 2020</span></h6><br>
+                      
+                    <p class="card-text">-Reviewed and assessed the work of data annotators,
+                      ensuring accuracy and completeness to maintain high
+                      standards for AI training datasets.
+                      <br><br>-Provided constructive feedback to data annotators to
+                      enhance their skills and improve annotation quality.
+                      <br><br>-Provided constructive feedback on guidelines and
+                      processes to improve annotation standards.
+                      <br><br>-Efficiently managed multiple tasks to meet deadlines in a
+                      fast-paced remote environment.</p>
+                  </div>
+              </div>
+          </div>
+
+
+
+          
+
+          <br><br><br>
+
+           <!-- Certificates section -->
+           <h5 >Certificates 🎓</h5>
+           <hr >
+                   <span class="float-end date">1/20/2024</span>
+               <h6>Introduction to HTML <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/40w98jjiw41nnd0vcy5as/htmlcert.jpg?rlkey=fopd36x8g5tacfna72a3vb91m&st=1rwlhxgq&dl=0" target="_blank">🔗</a></h6> 
+                   <p class="small-text">knowing the basics is useful for everyone who works in digital design, marketing, content and more.</p>
+                   <span class="float-end date">1/22/2024</span>
+               <h6>Introduction to CSS <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/9cfa2wfusdud88wu1o5un/csscert.jpg?rlkey=cl9a37u9rf5iwxf999rxqyee4&st=s2nxx9aw&dl=0" target="_blank">🔗</a></h6> 
+                   <p class="small-text">control the style & layout of websites.</p>
+                   <span class="float-end date">3/30/2024</span>
+                   <h6>Introduction to JavaScript <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/vxgfxps76gutiysda0dek/jscert.jpg?rlkey=r6yyrhehfmeubsk2449lnwfzm&st=8mufl92b&dl=0" target="_blank">🔗</a></h6> 
+                   <p class="small-text">a versatile, high-level programming language widely used for web development. </p>
+                   <span class="float-end date">10/14/2024</span>
+               <h6>Introduction to SQL <a style="text-decoration: none;" href="https://www.dropbox.com/scl/fi/pxnxlov4uiaskc1e5uf8m/0c8e5e2b-be11-4ae0-897b-d1689cce616d.pdf?rlkey=5u268cx9ltdqbudtt76dn77qr&st=gvebwak0&dl=0" target="_blank">🔗</a></h6> 
+                   <p class="small-text">a standardized programming language used for managing and manipulating relational databases.  </p>
+               
+               
+
+               <br><br >
+
+          <!-- Projects section -->
+          <h5 id="projects" >Projects 🏗️</h5>
+          <div class="flex-wrap d-flex gap-3 justify-content-lg-between justify-content-md-between justify-content-center">
+              <a href="https://github.com/gjcabual/StayEasy-App" target="_blank" style="text-decoration: none;">
+                <div class="card" style="width: 19rem;">
+                <img src="/src/images/project1.png"   class="card-img-top">
+                <div class="card-body">
+                    <h5 style="color:rgb(167, 160, 160);">StayEasy</h5>
+                  <p class="card-text">designed specifically for students and individuals
+                    seeking accommodation near Caraga State University.</p>
+                </div>
+            </div></a>
+            <a href="https://github.com/gjcabual/Enrollment-System" target="_blank" style="text-decoration: none;">
+              <div class="card " style="width: 19rem;">
+                  <img src="/src/images/picproject2.png" class="card-img-top" >
+                  <div class="card-body">
+                      <h5 style="color:rgb(167, 160, 160);">Enrollment system</h5>
+                    <p class="card-text">a real-time student enrollment system for a university or educational
+                      institution.</p>
                   </div>
               </div></a>
-              <a href="https://github.com/gjcabual/Enrollment-System" target="_blank" style="text-decoration: none;">
-                <div class="card " style="width: 19rem;">
-                    <img src="/src/images/picproject2.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h5 style="color:rgb(167, 160, 160);">Enrollment system</h5>
-                      <p class="card-text">a real-time student enrollment system for a university or educational
-                        institution.</p>
-                    </div>
-                </div></a>
-                <a href="https://github.com/gjcabual/IOS-Calculator-" target="_blank" style="text-decoration: none;">
-                  <div class="card" style="width: 19rem;">
-                    <img src="/src/images/project3.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h5 style="color:rgb(167, 160, 160);">IOS calculator replica </h5>
-                      <p class="card-text">Experience effortless calculations with this compact calculator, designed for both aesthetics and ease of use.</p>
-                    </div>
-                </div></a>
-                <a href="https://github.com/gjcabual/Login-Page" target="_blank" style="text-decoration: none;">
-                  <div class="card" style="width: 19rem;">
-                    <img src="/src/images/project4.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h5 style="color:rgb(167, 160, 160);">Glassmorphism login form</h5>
-                      <p class="card-text">Elevate your login with a sleek, translucent interface that captures the essence of modern design.</p>
-                    </div>
-                </div></a>  
-                <a href="https://github.com/gjcabual/IT109-PSGC-API" target="_blank" style="text-decoration: none;">
-                  <div class="card" style="width: 19rem;">
-                    <img src="/src/images/project5.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h5 style="color:rgb(167, 160, 160);">Registration form (PSGC API)</h5>
-                      <p class="card-text">a user-friendly registration form that integrates with the PSGC (Philippine Standard Geographic Code) API. </p>
-                    </div>
-                </div></a>
-                <a href="https://github.com/gjcabual/CSU-MySchool-replica" target="_blank" style="text-decoration: none;">
-                  <div class="card" style="width: 19rem;">
-                    <img src="/src/images/project6.png" class="card-img-top" >
-                    <div class="card-body">
-                        <h5 style="color:rgb(167, 160, 160);">CSU Single-Sign On replica </h5>
-                      <p class="card-text">Replicated the sign-in webpage (myschool.carsu.edu.ph) for CSU students and staffs.</p>
-                    </div>
-                </div></a>
+              <a href="https://github.com/gjcabual/IOS-Calculator-" target="_blank" style="text-decoration: none;">
+                <div class="card" style="width: 19rem;">
+                  <img src="/src/images/project3.png" class="card-img-top" >
+                  <div class="card-body">
+                      <h5 style="color:rgb(167, 160, 160);">IOS calculator replica </h5>
+                    <p class="card-text">Experience effortless calculations with this compact calculator, designed for both aesthetics and ease of use.</p>
+                  </div>
+              </div></a>
+              <a href="https://github.com/gjcabual/Login-Page" target="_blank" style="text-decoration: none;">
+                <div class="card" style="width: 19rem;">
+                  <img src="/src/images/project4.png" class="card-img-top" >
+                  <div class="card-body">
+                      <h5 style="color:rgb(167, 160, 160);">Glassmorphism login form</h5>
+                    <p class="card-text">Elevate your login with a sleek, translucent interface that captures the essence of modern design.</p>
+                  </div>
+              </div></a>  
+              <a href="https://github.com/gjcabual/IT109-PSGC-API" target="_blank" style="text-decoration: none;">
+                <div class="card" style="width: 19rem;">
+                  <img src="/src/images/project5.png" class="card-img-top" >
+                  <div class="card-body">
+                      <h5 style="color:rgb(167, 160, 160);">Registration form (PSGC API)</h5>
+                    <p class="card-text">a user-friendly registration form that integrates with the PSGC (Philippine Standard Geographic Code) API. </p>
+                  </div>
+              </div></a>
+              <a href="https://github.com/gjcabual/CSU-MySchool-replica" target="_blank" style="text-decoration: none;">
+                <div class="card" style="width: 19rem;">
+                  <img src="/src/images/project6.png" class="card-img-top" >
+                  <div class="card-body">
+                      <h5 style="color:rgb(167, 160, 160);">CSU Single-Sign On replica </h5>
+                    <p class="card-text">Replicated the sign-in webpage (myschool.carsu.edu.ph) for CSU students and staffs.</p>
+                  </div>
+              </div></a>
+          </div>
+
+          <br><br><br>
+          <!-- Onngoing Development section -->
+          <h5>Ongoing Development 🚧</h5>
+          <hr>
+          <!-- toggle with collapse -->
+          <p>
+              <h6 type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample">LightPath</h6>
+            </p>
+          <p class="small-text">a personalized Bible app crafted to guide you through your spiritual exploration.</p>
+
+            <div >
+              <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                <div class="card card-body" style="width: 200px;">
+                  <img src="/src/images/project7.png" width="100px" alt="">
+                </div>
+              </div>
+            </div>
+          <p>
+              <h6 type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample">NiftyNest</h6>
+            </p>
+          <p class="small-text">a Web3 NFT wallet designed to securely store, manage, and trade your non-fungible tokens.</p>
+
+            <div >
+              <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                <div class="card card-body" style="width: 200px;">
+                  <img src="/src/images/project8.png" width="100px" alt="">
+                </div>
+              </div>
+            </div>
+          <p>
+              <h6 type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample">Image to text Converter</h6>
+            </p>
+          <p class="small-text">extract text from scanned documents, photographs, or images containing written or printed text.</p>
+
+            <div >
+              <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                <div class="card card-body" style="width: 200px;">
+                  <img src="/src/images/project9.png" width="100px" alt="">
+                </div>
+              </div>
             </div>
 
-            <br><br><br>
-            <!-- Onngoing Development section -->
-            <h5>Ongoing Development 🚧</h5>
-            <hr>
-            <!-- toggle with collapse -->
-            <p>
-                <h6 type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample">LightPath</h6>
-              </p>
-            <p class="small-text">a personalized Bible app crafted to guide you through your spiritual exploration.</p>
+      </div>
+      
+      <br><br><br>
 
-              <div >
-                <div class="collapse collapse-horizontal" id="collapseWidthExample1">
-                  <div class="card card-body" style="width: 200px;">
-                    <img src="/src/images/project7.png" width="100px" alt="">
-                  </div>
-                </div>
-              </div>
-            <p>
-                <h6 type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample">NiftyNest</h6>
-              </p>
-            <p class="small-text">a Web3 NFT wallet designed to securely store, manage, and trade your non-fungible tokens.</p>
+      <!-- infi scroll -->
+      <h5 id="techstack">Tech Stack 💼</h5>
+      <hr>
+      <div class="scroll imgBox" style="--time:24s">
+      <div>
+          <img src="./src/images/html.png" alt="">
+          <img src="./src/images/css.png" alt="">
+          <img src="./src/images/bootstrap3.png" alt="">
+          <img src="./src/images/js.png" alt="">
+          <img src="./src/images/figma.png" alt="">
+          <img src="./src/images/photoshop.png" alt="">
+          <img src="./src/images/composer1.png" alt="">
+          <img src="./src/images/laravel1.png" alt="">
+          <img src="./src/images/python2.png" alt="">
+          <img src="./src/images/nodejs2.png" alt="">
+          <img src="./src/images/php.png" alt="">
+          <img src="./src/images/git2.png" alt="">
+          <img src="./src/images/github.png" alt="">
+      </div>
+      <div>
+          <img src="./src/images/html.png" alt="">
+          <img src="./src/images/css.png" alt="">
+          <img src="./src/images/bootstrap3.png" alt="">
+          <img src="./src/images/js.png" alt="">
+          <img src="./src/images/figma.png" alt="">
+          <img src="./src/images/photoshop.png" alt="">
+          <img src="./src/images/composer1.png" alt="">
+          <img src="./src/images/laravel1.png" alt="">
+          <img src="./src/images/python2.png" alt="">
+          <img src="./src/images/nodejs2.png" alt="">
+          <img src="./src/images/php.png" alt="">
+          <img src="./src/images/git2.png" alt="">
+          <img src="./src/images/github.png" alt="">
+      </div>
+      </div>
+  </div>
 
-              <div >
-                <div class="collapse collapse-horizontal" id="collapseWidthExample2">
-                  <div class="card card-body" style="width: 200px;">
-                    <img src="/src/images/project8.png" width="100px" alt="">
-                  </div>
-                </div>
-              </div>
-            <p>
-                <h6 type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample">Image to text Converter</h6>
-              </p>
-            <p class="small-text">extract text from scanned documents, photographs, or images containing written or printed text.</p>
+          <!-- Fixed Position Button -->
+ <a href="https://www.dropbox.com/scl/fi/xgnr29eo9nxjzfknnavt9/Cabual-Guilbert-Jan-F.-CV.pdf?rlkey=jt8km1l0wtvgysdv3hgi9dmil&st=0nfbczda&dl=0" type="button" class="fixed-button" target="_blank"><span class="">Resume</span> <img width="18px" src="/src/images/arrow3.png" alt=""></a>
 
-              <div >
-                <div class="collapse collapse-horizontal" id="collapseWidthExample3">
-                  <div class="card card-body" style="width: 200px;">
-                    <img src="/src/images/project9.png" width="100px" alt="">
-                  </div>
-                </div>
-              </div>
+  </div>
+  
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
 
-        </div>
-        
-        <br><br><br>
+ 
 
-        <!-- infi scroll -->
-        <h5 id="techstack">Tech Stack 💼</h5>
-        <hr>
-        <div class="scroll imgBox" style="--time:24s">
-        <div>
-            <img src="./src/images/html.png" alt="">
-            <img src="./src/images/css.png" alt="">
-            <img src="./src/images/bootstrap3.png" alt="">
-            <img src="./src/images/js.png" alt="">
-            <img src="./src/images/figma.png" alt="">
-            <img src="./src/images/photoshop.png" alt="">
-            <img src="./src/images/composer1.png" alt="">
-            <img src="./src/images/laravel1.png" alt="">
-            <img src="./src/images/python2.png" alt="">
-            <img src="./src/images/nodejs2.png" alt="">
-            <img src="./src/images/php.png" alt="">
-            <img src="./src/images/git2.png" alt="">
-            <img src="./src/images/github.png" alt="">
-        </div>
-        <div>
-            <img src="./src/images/html.png" alt="">
-            <img src="./src/images/css.png" alt="">
-            <img src="./src/images/bootstrap3.png" alt="">
-            <img src="./src/images/js.png" alt="">
-            <img src="./src/images/figma.png" alt="">
-            <img src="./src/images/photoshop.png" alt="">
-            <img src="./src/images/composer1.png" alt="">
-            <img src="./src/images/laravel1.png" alt="">
-            <img src="./src/images/python2.png" alt="">
-            <img src="./src/images/nodejs2.png" alt="">
-            <img src="./src/images/php.png" alt="">
-            <img src="./src/images/git2.png" alt="">
-            <img src="./src/images/github.png" alt="">
-        </div>
-        </div>
-    </div>
 
-            <!-- Fixed Position Button -->
-   <a href="https://www.dropbox.com/scl/fi/xgnr29eo9nxjzfknnavt9/Cabual-Guilbert-Jan-F.-CV.pdf?rlkey=jt8km1l0wtvgysdv3hgi9dmil&st=0nfbczda&dl=0" type="button" class="fixed-button" target="_blank"><span class="">Resume</span> <img width="18px" src="/src/images/arrow3.png" alt=""></a>
 
-    
+
+ 
     <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

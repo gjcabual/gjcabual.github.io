@@ -16,11 +16,19 @@ window.onscroll = function () {
         navbar.classList.remove('navbar-blur');
     }
 };
+document.getElementsByClassName('contents')[0].style.visibility = 'hidden';
+
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow");
+    document.getElementsByClassName('contents')[0].style.visibility = 'visible';
+  });
+
+
 
 
 //for preloader
 
-const greetings = ['• Hello', '• Nǐ hǎo', '• Hola', '• Hallo', '• Ciao', '• Olá', '• Aloha', '• Bonjour', '• नमस्ते'];
+const greetings = ['• Nǐ hǎo', '• Hola', '• Hallo', '• Ciao', '• Olá', '• Aloha', '• Bonjour', '• नमस्ते'];
 const helloText = document.getElementById('helloText');
 const preloader = document.getElementById('preloader');
 const content = document.querySelector('.content');
@@ -50,9 +58,10 @@ window.onload = function () {
     preloader.classList.add('visible');
     setTimeout(showNextGreeting, 800); // Start after 500ms
 };
-document.body.style.visibility = 'visible'; // Show the body content to ensure preloader is visible
 
 
 
 
 //end for prel
+
+
